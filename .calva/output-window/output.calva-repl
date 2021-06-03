@@ -21,3 +21,5 @@ clj꞉user꞉> 
 ; Syntax error compiling at (src/patterns.clj:3:1).
 ; Unable to resolve symbol: defn in this context
 clj꞉patterns꞉> 
+#'patterns-test/hollow-line
+clj꞉patterns-test꞉> 

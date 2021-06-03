@@ -7,8 +7,10 @@
 (defn hollow-line
   [border-width length symbol]
   (concat (repeat border-width symbol)
-        (when (> length border-width) (repeat (- length (* 2 border-width)) " "))
-        (when (> length border-width) (repeat border-width symbol))))
+        (when (> length border-width)
+          (concat
+           (repeat (- length (* 2 border-width)) " ")
+           (repeat border-width symbol)))))
 
 (defn filled-rectangle
   [m n symbol]
