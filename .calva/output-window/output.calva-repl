@@ -5,6 +5,7 @@
 ; Happy coding! ♥️
 
 ; Jacking in...
+; nREPL Connection was closed
 ; Starting Jack-in Terminal: clojure -Sdeps '{:deps {nrepl/nrepl {:mvn/version,"0.8.3"},cider/cider-nrepl {:mvn/version,"0.26.0"}}}'  -m nrepl.cmdline --middleware "[cider.nrepl/cider-middleware]"
 ; Hooking up nREPL sessions...
 ; Connected session: clj
@@ -15,11 +16,33 @@
 ;   - `alt+up` and `alt+down` traverse up and down the REPL command history
 ;      when the cursor is after the last contents at the prompt
 ;   - Clojure lines in stack traces are peekable and clickable.
-clj꞉user꞉>  ; Use `alt+enter` to evaluate
+clj꞉user꞉> 
 ; Jack-in done.
 clj꞉user꞉> 
-; Syntax error compiling at (src/patterns.clj:3:1).
-; Unable to resolve symbol: defn in this context
+#'patterns/filled-line
 clj꞉patterns꞉> 
-#'patterns-test/hollow-line
-clj꞉patterns-test꞉> 
+#'patterns/hollow-line
+clj꞉patterns꞉> 
+("*" "*")
+clj꞉patterns꞉> 
+; Execution error (ArityException) at patterns/eval7228 (REPL:54).
+; Wrong number of args (2) passed to: patterns/hollow-line
+clj꞉patterns꞉> 
+()
+clj꞉patterns꞉> 
+()
+clj꞉patterns꞉> 
+(" ")
+clj꞉patterns꞉> 
+("*")
+clj꞉patterns꞉> 
+("*" "*")
+clj꞉patterns꞉> 
+("*" " " "*")
+clj꞉patterns꞉> 
+("*")
+clj꞉patterns꞉> 
+("*")
+clj꞉patterns꞉> 
+("*" "*" "*" "*" " " " " "*" "*" "*" "*")
+clj꞉patterns꞉> 
