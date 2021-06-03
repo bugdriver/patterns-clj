@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# lein kaocha "$@"
+clojure -M:test -m kaocha.runner "$@"
